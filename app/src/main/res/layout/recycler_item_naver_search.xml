@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="4dp"
+    android:layout_marginVertical="4dp"
+    android:layout_marginHorizontal="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:src="@drawable/ic_launcher_foreground"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TITLE"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:padding="6dp"
+            android:maxLength="40"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/iv"/>
+        <TextView
+            android:id="@+id/low_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-1"
+            android:padding="4dp"
+            android:textSize="10sp"
+            android:layout_below="@id/title"
+            android:maxLines="1"
+            android:layout_marginLeft="12dp"/>
+        <TextView
+            android:id="@+id/brand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BRAND"
+            android:padding="4dp"
+            android:textColor="@color/purple_500"
+            android:textSize="12sp"
+            android:layout_marginVertical="4dp"
+            android:layout_marginLeft="12dp"
+            android:layout_below="@id/low_price"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_launcher_foreground"
+            app:civ_border_width="4dp"
+            app:civ_border_color="@color/white"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="140dp"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
